@@ -8,6 +8,8 @@
 ## [6. SOLID](#solid)
 ## [7. Sequelize](#sequelize)
 ## [8. Testes Rest](#rest)
+## [9. Detalhes adicionais](#detail)
+
 
 
 ## <a id="intro">1. Introdução
@@ -147,6 +149,13 @@ Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src
 
 [Voltar ao inicio](#begin)
 
+
+## <a id="detail"> 8. Detalhes adicionas
+
+Ao usuario criar uma interação, os atentendes de qualquqer login poderão ver as interações e criar novas interações com o cliente
+
+
+[Voltar ao inicio](#begin)
 
 
 
