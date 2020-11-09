@@ -9,6 +9,7 @@
 ## [7. Sequelize](#sequelize)
 ## [8. Testes Rest](#rest)
 ## [9. Detalhes adicionais](#detail)
+## [10. Respostas](#resp)
 
 
 
@@ -151,6 +152,41 @@ Execução dos testes é baseado no banco de dados de teste.
 ## <a id="detail"> 8. Detalhes adicionas
 
 Ao usuario criar uma interação, os atentendes de qualquqer login poderão ver as interações e criar novas interações com o cliente
+
+
+![alt text](https://github.com/cbcarlos07/desafio-bemol/blob/master/assets/bemol4.png)
+
+Ao clicar no ícone de comentários, aparece a interação
+
+![alt text](https://github.com/cbcarlos07/desafio-bemol/blob/master/assets/bemol1.png)
+
+[Voltar ao inicio](#begin)
+
+
+## <a id="resp"> 9. Respostas
+
+1. A solução deve ser disponibilizada em Cloud ou On-premise?
+
+    Cloud. Devido a não utilização de servidores locais, e com alta opção de escalabilidade
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa
+solução, responda qual ferramenta acreditas ser apropriada para o controle de
+tarefas da equipe, a ferramenta é ágil?
+
+    Trello. Sim a ferramenta é ágil
+
+3. Você se sente capaz de liderar esta equipe? Por quê?    
+
+    Sim. Porque além de ter a teoria, pois fim um bom tempo de MBA em Gerenciamento de Projetos de TI, antes de trancar o curso, já liderei uma equipe pequena
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria?
+
+    Adicionar realtime na aplicação
+
+5. Acha válido esse desafio para o processo que está participando?
+
+    Sim. É importante entender a regra de negócio da organização
+
 
 
 [Voltar ao inicio](#begin)
