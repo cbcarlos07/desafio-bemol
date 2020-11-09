@@ -1,4 +1,4 @@
-# <a id="begin"> Desafio IPDV
+# <a id="begin"> Desafio Bemol
 
 ## [1. Introdução](#intro)
 ## [2. O que foi usado](#uso)
@@ -60,7 +60,7 @@ O Banco de dados utilizado no projeto foi o MySQL na versão 8.0.
 
 O repositório do Docker Compose do banco de dados utilizado encontra-se [aqui](https://github.com/cbcarlos07/docker-mysql)
 
-![alt text](https://github.com/cbcarlos07/desafio-ipdv/blob/master/backend/src/config/db/ddl/mer.png)
+![alt text](https://github.com/cbcarlos07/desafio-bemol/blob/master/assets/er.png)
 
 <b>NOTA</b>
 
@@ -70,7 +70,7 @@ Antes de executar o comando do docker-compose, primeiro crie a rede interna do d
 
     docker network create -d bridge mysql-network
 
-Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src/config/db/ddl) deste projeto encontram-se o MER (Modelo Entidade Relacionamento) e o arquivo sql.sql com inserts já realizados
+Na pasta [er](https://github.com/cbcarlos07/desafio-bemol/tree/master/backend/src/config/db/ddl) deste projeto encontram-se o MER (Modelo Entidade Relacionamento) e o arquivo sql.sql com inserts já realizados
 
 Certifique-se de primeiro deixar esse __container__ em execução antes de prosseguir com a inicalização do projeto
 
@@ -137,15 +137,13 @@ Este projeto foi baseado na arquitetura SOLID de acordo com [este artigo](https:
 
 ## <a id="rest"> 7. Testes Rest    
 
-Para o teste de API foi usada a ferramenta [Postman](https://www.postman.com/)
+Para o teste de API foi usada a ferramenta [Insomnia](https://insomnia.rest/download/)
 
-Na pasta [rest](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/rest) deste projeto tem o arquivo com os testes
+Na pasta [rest](https://github.com/cbcarlos07/desafio-bemol/blob/master/assets/Insomnia_2020-11-08) deste projeto tem o arquivo com os testes
 
 Basta importar dentro da ferramenta o arquivo `json` e as requisiçoes estão prontas
 
 Execução dos testes é baseado no banco de dados de teste.
-
-Na pasta [er](https://github.com/cbcarlos07/desafio-ipdv/tree/master/backend/src/config/db/ddl) encontra-se o arquivo com a base de dados de teste
 
 [Voltar ao inicio](#begin)
 
