@@ -1,0 +1,50 @@
+<!-- INICIO DO CONTEUDO -->
+
+    <!-- content -->
+    <section class="content">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Lista de interações</h3>
+                    <div class="box-tools">
+                        <a [routerLink]="['/interacoes/cadastro', idUsuario]" class="btn btn-success">
+                            <i class="fa fa-plus"></i> Nova Interação
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table table-hover" >
+                        <thead>
+                            <th>Data</th>
+                            <th style="width: 60px">Ação</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let interacao of interacoes">
+                                <td>{{ interacao.dt_interacao | date: 'dd/MM/yyyy' }}</td>                                
+                                <td>
+                                    <a [routerLink]="['/interacoes/contato', interacao.id]" title="Interações" >
+                                        <i class="fa  fa-comment text-success"></i>
+                                    </a>
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  
+                </div>
+            </div>
+            <!-- /.box -->
+
+            
+            
+            
+            <!-- /.col -->
+        </div>
+    </section>

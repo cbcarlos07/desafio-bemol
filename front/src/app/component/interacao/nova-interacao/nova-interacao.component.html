@@ -1,0 +1,40 @@
+<!-- INICIO DO CONTEUDO -->
+
+    <!-- content -->
+    <section class="content">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Gerenciamento de usuario</h3>
+                    <div class="box-tools">
+                        <a [routerLink]="['/usuario/cadastro']" class="btn btn-success">
+                            <i class="fa fa-plus"></i> Nova usuario
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <form [formGroup]="form" (ngSubmit)="salvar()">
+                        <label>Mensagem</label>
+                        <textarea class="form-control" formControlName="mensagem">
+
+                        </textarea>
+
+                        <button class="btn btn-success" [disabled]="form.invalid">Salvar</button>
+
+                    </form>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  
+                </div>
+            </div>
+            <!-- /.box -->
+
+            
+            
+            
+            <!-- /.col -->
+        </div>
+    </section>

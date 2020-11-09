@@ -1,0 +1,81 @@
+<!-- INICIO DO CONTEUDO -->
+
+    <!-- content -->
+    <section class="content">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">{{ title }}</h3>
+                    <div class="box-tools">
+                        <button  class="btn btn-success" (click)="voltar()"> 
+                            <i class="fa fa-reply"></i> Voltar
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- /.box-header -->
+                <div class="box-body">
+                    
+                    <form [formGroup]="form" (ngSubmit)="salvar()">
+                        <div class="form-group col-md-6">
+                            <label>Nome</label>
+                            <input class="form-control" formControlName="nome">
+                        </div>
+                        <div class="row"></div>
+                        <div class="form-group col-md-6">
+                            <label>CPF</label>
+                            <input class="form-control" formControlName="cpf">
+                        </div>
+                        <div class="row"></div>
+                        <div class="form-group col-md-6">
+                            <label>CEP</label>
+                            <input class="form-control" formControlName="cep" (blur)="buscarCep()">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label>Rua</label>
+                            <input class="form-control" formControlName="rua" readonly>
+                        </div>
+                        
+                        <div class="row"></div>
+                        <div class="form-group col-md-6">
+                            <label>Sexo</label>
+                            <select class="form-control" formControlName="sexo">
+                                <option value="F">Feminino</option>
+                                <option value="M">Masculino</option>
+                            </select>
+                        </div>
+                        <div class="row"></div>
+                        <div class="form-group col-md-6">
+                            <label>E-mail</label>
+                            <input class="form-control" formControlName="email" type="email">
+                        </div>
+                        <div class="row"></div>
+                        <div class="form-group col-md-6">
+                            <label>Senha</label>
+                            <input class="form-control" formControlName="senha" type="password">
+                        </div>
+                        <div class="row"></div>
+                        <div class="form-group col-md-6">
+                            <label>Tipo de Usuário</label>
+                            <select class="form-control" formControlName="tipo_usuario_id">
+                                <option *ngFor="let tipo of tipoUsuarios" [value]="tipo.id">{{ tipo.nome }}</option>
+                            </select>
+                        </div>
+
+                        <div class="row"></div>
+                        <button class="btn btn-success" [disabled]="form.invalid" >Salvar</button>
+                    </form>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  
+                </div>
+            </div>
+            <!-- /.box -->
+
+            
+            
+            
+            <!-- /.col -->
+        </div>
+    </section>

@@ -1,0 +1,61 @@
+<!-- INICIO DO CONTEUDO -->
+
+    <!-- content -->
+    <section class="content">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Gerenciamento de usuario</h3>
+                    <div class="box-tools">
+                        <a [routerLink]="['/usuario/cadastro']" class="btn btn-success">
+                            <i class="fa fa-plus"></i> Nova usuario
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table table-hover" >
+                        <thead>
+                            <th>Nome</th>
+                            <th>Email</th>                            
+                            <th style="width: 100px">Ação</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let usuario of usuarios">
+                                <td>{{ usuario.nome }}</td>
+                                <td>{{ usuario.email }}</td>                                
+                                <td>
+                                    <a [routerLink]="['/usuario/editar',usuario.id]" title="Editar" >
+                                        <i class="fa  fa-edit"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a [routerLink]="[]" title="Remover" (click)="perguntaRemover( usuario )">
+                                        <i class="fa  fa-remove text-danger"></i>
+                                    </a>
+                                    
+                                    &nbsp;
+                                    <a [routerLink]="['/interacoes', usuario.id]" title="Interações" >
+                                        <i class="fa  fa-exclamation-circle text-success"></i>
+                                    </a>
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  
+                </div>
+            </div>
+            <!-- /.box -->
+
+            
+            
+            
+            <!-- /.col -->
+        </div>
+    </section>

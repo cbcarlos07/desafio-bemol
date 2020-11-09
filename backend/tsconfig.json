@@ -1,0 +1,9 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "ES6",
+        "outDir": "dist",
+        "module": "commonjs",
+        "esModuleInterop": true
+    }
+}

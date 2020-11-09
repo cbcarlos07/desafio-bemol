@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+	
+    <div class="container">
+			
+    
+    	<h1 style='color:#fff;background:#00a65a;padding: 10px;margin:0; vertical-align:bottom;border-left: 10px solid #31be64;font-family:Roboto;'>
+		
+			Vip Commerce
+		</h1>
+		<blockquote style='font-size:14pt;margin:0;padding: 40px 30px;border-left: 10px solid #00a65a;font-family:Roboto;'>
+            
+            Dados do Pedido
+        
+            <hr>
+            <strong>Código:</strong> ${obj.id} <br>
+            <strong>Data do Pedido</strong> ${obj.dt_criacao} <br>
+            <strong>Observação:</strong> ${obj.obsrvacao} <br>
+            
+            <br>
+            Cliente
+        
+            <hr>
+            <strong>Cliente</strong> ${obj.cliente.nome} <br>
+            <strong>CPF</strong> ${obj.cliente.cpf} <br>
+            <strong>Email:</strong> ${obj.cliente.email} <br>
+            
+            <br>
+            Produtos
+            <hr>
+            
+            
+            <div style="padding: 0px">
+                <table style="border: 1px solid blue">
+                    <thead style="background-color: #31be64; color: white;">
+                        <th>PRODUTO</th>
+                        <th>QTDE</th>
+                        <th>VALOR</th>
+                        <th>SUB TOTAL</th>
+                    </thead>
+                    <tbody >
+                        <td style="text-align: center; ">TESTE</td>
+                        <td style="text-align: center; ">1</td>
+                        <td style="text-align: center; ">2</td>
+                        <td style="text-align: center; ">2</td>
+                    </tbody>
+
+                </table>    
+            <div>
+
+			<br>
+			
+			
+			<br>
+			
+			<p>Atenciosamente,</p>
+
+
+			<p>Equipe da Vip Commerce</p>
+            <span style="font-size: 9px">Esse e-mail é gerado automaticamente, não precisa respondê-lo</span>
+            
+            <a href="http://localhost:3335/api/v1/pedidos/2/report">Clique aqui</a>
+		</blockquote>
+    </div>
+
+</body>
+</html>
