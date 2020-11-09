@@ -47,6 +47,10 @@ class CustomService{
         })
     }
 
+    findAll(){
+        return customRepository.findAll()
+    }
+
 }
 
 export default new CustomService

@@ -10,6 +10,7 @@ const contatoRouter = new Router()
 
 contatoRouter.post('', controller.adicionarInteracao )
 
+contatoRouter.get('', controller.findAll )
 
 contatoRouter.get('/:id', controller.listarMensagemPorInteracao )
 

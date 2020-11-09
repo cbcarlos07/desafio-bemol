@@ -1,0 +1,54 @@
+<!-- INICIO DO CONTEUDO -->
+
+    <!-- content -->
+    <section class="content">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Gerenciamento de interacao</h3>
+                    <div class="box-tools">
+                        <a [routerLink]="['/interacao/cadastro']" class="btn btn-success">
+                            <i class="fa fa-plus"></i> Nova interacao
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table table-hover" >
+                        <thead>
+                            <th>Nome</th>
+                            <th>Data da Interação</th>                            
+                            <th style="width: 100px">Ação</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let interacao of interacoes">
+                                <td>{{ interacao.usuario.nome }}</td>
+                                <td>{{ interacao.dt_interacao | date: 'dd/MM/yyyy' }}</td>                                
+                                <td>
+                                    
+                                    &nbsp;
+                                    <a [routerLink]="['/contato', interacao.id]" title="Interações" >
+                                        <i class="fa  fa-comment text-success"></i>
+                                    </a>
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer clearfix">
+                  
+                </div>
+            </div>
+            <!-- /.box -->
+
+            
+            
+            
+            <!-- /.col -->
+        </div>
+    </section>

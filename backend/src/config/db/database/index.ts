@@ -17,5 +17,6 @@ ContatoModel.init( connection )
 
 AssociationsTable.associate( ContatoModel, UsuarioModel, 'usuario_id', 'usuario' )
 AssociationsTable.associate( UsuarioModel, TipoUsuarioModel, 'tipo_usuario_id', 'tipo_usuario' )
+AssociationsTable.associate( InteracaoModel, UsuarioModel, 'usuario_id', 'usuario' )
 
 export default connection

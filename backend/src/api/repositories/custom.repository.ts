@@ -6,6 +6,15 @@ import ContatoModel from "../../config/db/models/contato.model"
 
 
 class CustomRepository {
+    findAll() {
+        return InteracaoModel.findAll({
+            include: [
+                {
+                    association: 'usuario'
+                }
+            ]
+        })
+    }
     
     listarInteracaoPorUsuario(id: number) {
         return InteracaoModel.findAll({

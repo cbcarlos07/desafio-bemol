@@ -1,8 +1,21 @@
 import customService from "../services/custom.service";
+import GenericService from "../services/generic.service";
+import InteracaoModel from "../../config/db/models/interacao.model";
+
 
 class ContatoController {    
     
     
+
+    findAll(req, res){
+        customService
+            .findAll()
+            .then( (response: any) =>{
+                res.send( response,200 )
+            }).catch( e => {
+                res.send( {msg: "Falha ao tentar adicionar item!"},201 )
+            })
+    }
 
     adicionarInteracao(req, resp){
         
@@ -11,8 +24,6 @@ class ContatoController {
                     .then( (response: any) =>{
                         resp.send( {msg: "Item salvo com sucesso!", id: response.id},200 )
                     }).catch( e => {
-                        console.log(e);
-                            
                         resp.send( {msg: "Falha ao tentar adicionar item!"},201 )
                     })
     }
