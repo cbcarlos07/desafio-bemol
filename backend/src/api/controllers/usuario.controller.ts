@@ -1,6 +1,8 @@
 
 import GenericService from '../services/generic.service'
 import UsuarioModel from '../../config/db/models/usuario.model';
+import customService from '../services/custom.service';
+
 let service: any
 
 class UsuarioController {    
@@ -56,8 +58,8 @@ class UsuarioController {
     }
 
     findAll( req, resp ){
-        return service
-                   .findAll( )
+        return customService
+                   .listaUsuario( )
                    .then( (response: any) =>{
                         resp.send( response,200 )
                     }).catch( e => {

@@ -6,5 +6,6 @@ export default interface Usuario{
     sexo: string
     email: string
     senha?: string
-    tipo_usuario_id: number
+    tipo_usuario_id: number,
+    tipo?: string
 }

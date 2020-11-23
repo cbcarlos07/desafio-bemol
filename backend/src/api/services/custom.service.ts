@@ -51,6 +51,10 @@ class CustomService{
         return customRepository.findAll()
     }
 
+    listaUsuario(){
+        return customRepository.listaUsuario()
+    }
+
 }
 
 export default new CustomService

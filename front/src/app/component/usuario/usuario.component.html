@@ -19,12 +19,14 @@
                         <thead>
                             <th>Nome</th>
                             <th>Email</th>                            
+                            <th>Tipo de Usuario</th>
                             <th style="width: 100px">Ação</th>
                         </thead>
                         <tbody>
                             <tr *ngFor="let usuario of usuarios">
                                 <td>{{ usuario.nome }}</td>
                                 <td>{{ usuario.email }}</td>                                
+                                <td>{{ usuario.tipo }}</td>                                
                                 <td>
                                     <a [routerLink]="['/usuario/editar',usuario.id]" title="Editar" >
                                         <i class="fa  fa-edit"></i>
